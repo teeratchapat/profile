@@ -144,10 +144,20 @@
               >
             </li>
             <li>
+              <a href="#experience" class="nav-link scrollto"
+                ><i class="bx bx-desktop"></i> <span>Experience</span></a
+              >
+            </li>
+            <li>
               <a href="#portfolio" class="nav-link scrollto"
                 ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
               >
             </li>
+            <!-- <li>
+              <a href="#cv" class="nav-link scrollto"
+                ><i class="bx bx-clipboard"></i> <span>CV</span></a
+              >
+            </li> -->
           </ul>
         </nav>
         <!-- .nav-menu -->
@@ -181,6 +191,8 @@
       <div id="experience-section-placeholder"></div>
 
       <div id="portfolio-section-placeholder"></div>
+
+      <!-- <div id="cv-section-placeholder"></div> -->
     </main>
     <!-- End #main -->
 
@@ -255,7 +267,7 @@
             ).innerHTML = data;
           })
           .catch((error) =>
-            console.error("Error loading About section:", error)
+            console.error("Error loading Experience section:", error)
           );
 
         fetch("portfolio.html")
@@ -267,6 +279,15 @@
           .catch((error) =>
             console.error("Error loading About section:", error)
           );
+
+        // fetch("cv.html")
+        //   .then((response) => response.text())
+        //   .then((data) => {
+        //     document.getElementById("cv-section-placeholder").innerHTML = data;
+        //   })
+        //   .catch((error) =>
+        //     console.error("Error loading About section:", error)
+        //   );
       });
     </script>
   </body>
